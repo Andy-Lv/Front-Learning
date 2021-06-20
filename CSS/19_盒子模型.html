@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 所有的元素会自带内边距或内边距,因此必要的时候需要清除 */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            width: 300px;
+            height: 250px;
+            /* 边框的粗细 */
+            border-width: 5px;
+            /* 边框样式 */
+            /* solid:实线边框 dashed:虚线边框 dotted:点线边框 */
+            border-style: solid;
+            /* 边框颜色 */
+            border-color: red;
+            /* 简写  border: 5px solid red; */
+            /* 可以通过top buttom left right 来控制每个边框的属性 */
+
+            /* 内边距 */
+            padding-left: 20px;
+            padding-top: 20px;
+            /* 复合写法 */
+            /* 上下左右全是20px */
+            padding: 20px;
+            /* 上下是5px 左右是10px */
+            padding: 5px 10px;
+            /* 上5px 左右10px 下20px */
+            padding: 5px 10px 20px;
+            /* 上右下左 顺时针 */
+            padding: 5px 10px 20px 30px;
+
+            /* 外边距 */
+            margin: 20px;
+            /* 外边距的合并是以大的为准,因此尽量给下面的盒子指定内边距 */
+        }
+
+        table td {
+            border: 1px solid pink;
+            /* 合并相邻边框宽度 */
+            border-collapse: collapse;
+            /* 文字居中对其 */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        我是你爸爸content我是你爸爸content我是你爸爸content
+    </div>
+    <table align="center" cellspacing="0">
+        <thead>
+            <tr>
+                <th>排名</th>
+                <th>关键词</th>
+                <th>趋势</th>
+                <th>进入搜索</th>
+                <th>最近7日</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+    </table>
+</body>
+
+</html>

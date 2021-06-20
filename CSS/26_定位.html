@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 定位 position -->
+    <!-- 定位=定位模式+边偏移 -->
+    <style>
+        /* 静态定位 static */
+        /* 静态定位是元素的默认定位方式,无定位的意思 */
+        /* 按照标准流特性摆放位置,没有边偏移 */
+
+        /* ****************子绝父相************* */
+
+        /* 相对定位 relative */
+        /* 在元素移动位置的时候相对于原来的位置来说 */
+        /* 原来标准流的位置继续占有 */
+        .box1 {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+        }
+
+        /* 绝对定位 absolute */
+        /* 元素在移动位置的时候,是相对于其祖先元素来说的 */
+        /* 如果没有祖先元素或祖先元素没有定位,此时以浏览器进行对其 */
+        /* 如果祖先元素有定位,则以最近一级有定位的祖先元素为参考基准 */
+        /* 绝对定位不再占有原来的位置 */
+        .father {
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .son {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+        }
+
+        /* 固定定位 fixed */
+        /* 固定定位是元素固定与浏览器可视区的位置,浏览器页面滚动的时候元素的位置不会改变 */
+        /* 以浏览器可视窗口来决定位置 */
+        /* 不随滑动条滚动而滚动 */
+        /* 固定定位不占有原先的位置 */
+
+        /* 黏性定位 stickly */
+        /* 以可视窗口为参照点移动窗口 */
+        /* 占有原先位置 */
+        /* 必须添加top right buttom left其中一个才起作用 */
+
+        /* 当出现多个盒子叠放在一起时,用在z-index来加权,全越大,盒子就在上面显示 */
+        /* 数字后面不能加单位,只有定位的元素才有这个属性 */
+
+        /* 行内元素添加绝对或者固定定位,可以直接设定高度和宽度 */
+        /* 块级元素添加绝对或者固定定位,如果不给宽度和高度,默认大小是文本大小 */
+
+        /* 浮动的元素不会压住下面标准流的盒子,但绝对定位会 */
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="father">
+        <div class="son">
+            son
+        </div>
+    </div>
+</body>
+
+</html>

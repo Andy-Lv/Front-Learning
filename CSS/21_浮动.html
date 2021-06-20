@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 添加浮动,box1盒子的标准流位置不会保留,下面的盒子会上移,在这个盒子的下面 */
+            float: left;
+            /* 添加浮动效果后就变成了行内块,不需要另外指定 */
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">浮动的盒子</div>
+    <div class="box2">标准流的盒子</div>
+</body>
+
+</html>

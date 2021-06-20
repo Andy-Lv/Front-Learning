@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 如果选择器相同,则执行层叠性 */
+        /* !important > 行内样式 > ID选择器 > 类选择器/伪类选择器 > 元素选择器 > 通配符选择器 */
+        div {
+            color: pink;
+        }
+
+        .nav {
+            color: green;
+        }
+
+        /* 0 0 0 1 */
+        li {
+            color: green;
+        }
+
+        /* 复合选择器有权重叠加 */
+        /* 0 0 0 1 +0 0 0 1=0 0 0 2 */
+        ul li {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">我是你爸爸</div>
+
+    <ul>
+        <li>#</li>
+        <li>#</li>
+        <li>#</li>
+    </ul>
+</body>
+
+</html>

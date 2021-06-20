@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单域是包含表单元素的区域 -->
+    <!-- form 标签用于定义表单域，实现用户信息的收集和传递 -->
+    <!-- form 会把它范围中的元素信息提交到服务器 -->
+    <!-- lable 用于绑定一个表单元素，当点击lable中的文本时，浏览器会自动将焦点转到或者选择对应的表单元素上增加用户体验 -->
+    <form action="提交到哪个程序中运行" method="GET">
+        用户名 <input type="text"><br>
+        <!-- maxlength 表示输入最大字符数量 -->
+        密码  <input type="password" maxlength="8"><br>
+
+        <!-- radio 单选按钮，可以实现多选 -->
+        <!-- name 是表单元素名字，这里性别单选按钮必须有相同的名字name,才可以实现单选 -->
+        <!-- value 表示选择这个框后表示的是什么 -->
+        性别:男 <input type="radio" name="sex" value="男"> 女 <input type="radio" name="sex" value="女"><br>
+
+        <!-- checkbox 多选按钮，可以实现多选 -->
+        <!-- check 表示默认被选中 -->
+        爱好：eating<input type="checkbox" checked>sleeping <input type="checkbox">
+
+        <!-- 定义一个注册按钮，点击提交表格到action中的程序运行 -->
+        <input type="submit" value="免费注册"><br> 
+        <!-- 重置表单元素至默认状态 -->
+        <input type="reset" value="重新编写"><br>
+
+        <label for="name">用户名:</label><input type="text" id="name"><br>
+
+        <!-- 下拉选择表单 -->
+        <!-- select 至少包含一个option ， selected 为默认选中 -->
+        籍贯：<select name="" id="">
+            <option value="湖北" selected>湖北</option>
+            <option value="湖南">湖南</option>
+            <option value="河北">河北</option>
+            <option value="河南">河南</option>
+        </select>
+
+        <!-- 文本域 -->
+        <textarea name="" id="" cols="30" rows="10">
+            吕国强最帅
+        </textarea>
+    </form>
+</body>
+</html>

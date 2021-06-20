@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            /* 定义字体为微软雅黑 */
+            font-family: '微软雅黑';
+            /* 定义字体大小 */
+            font-size: 16px;
+        }
+
+        /* 将不再标签中的文字指定属性 */
+        body {
+            /* 默认第一个字体,如果第一个没有就第二个,以此类推 */
+            font-family: 'Courier New', Courier, monospace';
+
+        }
+
+        /* 字体粗细 */
+        .bold {
+            /* font-weight: bold; */
+            font-weight: 700;
+            /* 700后面不要加单位,等价于bold直接加粗 */
+        }
+
+        /* 文字样式 正常或者斜体 */
+        p {
+            /* 斜体 */
+            font-style: italic;
+        }
+
+        /* 复合写法 */
+        div {
+            /* font-style: italic;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: 'Microsoft yahei'; */
+
+            /* font: font-style font-weight font-size/line-height font-family; */
+            /* 顺序不能变 */
+            /* 不需要的属性可以省略(取默认值) 但必须保留 font-size font-family */
+            font: italic 700 16px 'Microsoft yahei';
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
