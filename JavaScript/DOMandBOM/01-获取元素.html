@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 根据ID -->
+    <div class="time">2021-6-27</div>
+    <script>
+        // 返回的是一个object对象
+        var timer = document.getElementById('time');
+    </script>
+
+    <!-- 根据标签名 -->
+    <ul>
+        <li>我是你爹</li>
+        <li>我是你爹</li>
+        <li>我是你爹</li>
+        <li>我是你爹</li>
+    </ul>
+    <script>
+        // 获取过来元素对象的集合,以伪数组的形式存储,内容是同步变化的
+        var lis = document.getElementsByTagName('li');
+        console.log(lis);
+        console.log(lis[0]);
+    </script>
+
+    <!-- 根据类名 -->
+    <div class="box1">盒子1</div>
+    <div class="box2">盒子2</div>
+    <div id="nav">
+        <ul>
+            <li>我是你爹</li>
+        </ul>
+    </div>
+
+    <script>
+        var boxs = document.getElementsByClassName('box');
+
+        // querySelector 返回指定选择器的第一个元素对象
+        // 里面的参数需要加符号,类就要加"." id就要加"#"
+        var firstbox = document.querySelector('.box');
+        var nav = document.querySelector('#nav');
+        var li = document.querySelector('li');
+        // querySelectorAll获取所有元素集合
+    </script>
+
+
+    <!-- 获取特殊元素 -->
+
+    <script>
+        //获取body元素
+        var bodEle = document.body;
+        // 获取html元素
+        var htmlEle = document.documentElement;
+    </script>
+</body>
+
+</html>
